@@ -1,0 +1,7 @@
+C:\Users\dell\source\repos\dialogboxDemo\dialogboxDemo\bin\Debug\dialogboxDemo.exe.config
+C:\Users\dell\source\repos\dialogboxDemo\dialogboxDemo\bin\Debug\dialogboxDemo.exe
+C:\Users\dell\source\repos\dialogboxDemo\dialogboxDemo\bin\Debug\dialogboxDemo.pdb
+C:\Users\dell\source\repos\dialogboxDemo\dialogboxDemo\obj\Debug\dialogboxDemo.csproj.AssemblyReference.cache
+C:\Users\dell\source\repos\dialogboxDemo\dialogboxDemo\obj\Debug\dialogboxDemo.csproj.CoreCompileInputs.cache
+C:\Users\dell\source\repos\dialogboxDemo\dialogboxDemo\obj\Debug\dialogboxDemo.exe
+C:\Users\dell\source\repos\dialogboxDemo\dialogboxDemo\obj\Debug\dialogboxDemo.pdb

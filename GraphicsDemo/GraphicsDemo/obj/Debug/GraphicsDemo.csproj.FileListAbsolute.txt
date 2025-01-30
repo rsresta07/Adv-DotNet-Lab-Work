@@ -1,0 +1,13 @@
+C:\Users\dell\source\repos\GraphicsDemo\GraphicsDemo\bin\Debug\GraphicsDemo.exe.config
+C:\Users\dell\source\repos\GraphicsDemo\GraphicsDemo\bin\Debug\GraphicsDemo.exe
+C:\Users\dell\source\repos\GraphicsDemo\GraphicsDemo\bin\Debug\GraphicsDemo.pdb
+C:\Users\dell\source\repos\GraphicsDemo\GraphicsDemo\obj\Debug\GraphicsDemo.csproj.CoreCompileInputs.cache
+C:\Users\dell\source\repos\GraphicsDemo\GraphicsDemo\obj\Debug\GraphicsDemo.exe
+C:\Users\dell\source\repos\GraphicsDemo\GraphicsDemo\obj\Debug\GraphicsDemo.pdb
+C:\Users\dell\OneDrive\Desktop\Adv.NET_LAB\GraphicsDemo\GraphicsDemo\bin\Debug\GraphicsDemo.exe.config
+C:\Users\dell\OneDrive\Desktop\Adv.NET_LAB\GraphicsDemo\GraphicsDemo\bin\Debug\GraphicsDemo.exe
+C:\Users\dell\OneDrive\Desktop\Adv.NET_LAB\GraphicsDemo\GraphicsDemo\bin\Debug\GraphicsDemo.pdb
+C:\Users\dell\OneDrive\Desktop\Adv.NET_LAB\GraphicsDemo\GraphicsDemo\obj\Debug\GraphicsDemo.csproj.AssemblyReference.cache
+C:\Users\dell\OneDrive\Desktop\Adv.NET_LAB\GraphicsDemo\GraphicsDemo\obj\Debug\GraphicsDemo.csproj.CoreCompileInputs.cache
+C:\Users\dell\OneDrive\Desktop\Adv.NET_LAB\GraphicsDemo\GraphicsDemo\obj\Debug\GraphicsDemo.exe
+C:\Users\dell\OneDrive\Desktop\Adv.NET_LAB\GraphicsDemo\GraphicsDemo\obj\Debug\GraphicsDemo.pdb

@@ -1,0 +1,11 @@
+C:\Users\dell\source\repos\InheritanceFormDemo\InheritanceFormDemo\bin\Debug\InheritanceFormDemo.exe.config
+C:\Users\dell\source\repos\InheritanceFormDemo\InheritanceFormDemo\bin\Debug\InheritanceFormDemo.exe
+C:\Users\dell\source\repos\InheritanceFormDemo\InheritanceFormDemo\bin\Debug\InheritanceFormDemo.pdb
+C:\Users\dell\source\repos\InheritanceFormDemo\InheritanceFormDemo\obj\Debug\InheritanceFormDemo.csproj.AssemblyReference.cache
+C:\Users\dell\source\repos\InheritanceFormDemo\InheritanceFormDemo\obj\Debug\InheritanceFormDemo.Form1.resources
+C:\Users\dell\source\repos\InheritanceFormDemo\InheritanceFormDemo\obj\Debug\InheritanceFormDemo.Form2.resources
+C:\Users\dell\source\repos\InheritanceFormDemo\InheritanceFormDemo\obj\Debug\InheritanceFormDemo.Properties.Resources.resources
+C:\Users\dell\source\repos\InheritanceFormDemo\InheritanceFormDemo\obj\Debug\InheritanceFormDemo.csproj.GenerateResource.cache
+C:\Users\dell\source\repos\InheritanceFormDemo\InheritanceFormDemo\obj\Debug\InheritanceFormDemo.csproj.CoreCompileInputs.cache
+C:\Users\dell\source\repos\InheritanceFormDemo\InheritanceFormDemo\obj\Debug\InheritanceFormDemo.exe
+C:\Users\dell\source\repos\InheritanceFormDemo\InheritanceFormDemo\obj\Debug\InheritanceFormDemo.pdb

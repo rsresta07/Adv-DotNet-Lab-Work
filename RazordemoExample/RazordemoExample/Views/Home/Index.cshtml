@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<html>
+<body bgcolor="Cyan">
+    <h2>@DateTime.Now</h2>
+
+@{
+string []name = {"Ram","Shyam","Sita","Devika","Susmita"};
+foreach(string n in  name)
+{
+<h1> @n </h1>
+}
+}
+
+
+@{
+var mark =89;
+if(mark>90)
+{
+<h1> Excellent</h1>
+}
+else
+{
+<h1> Not Bad</h1>
+}
+}
+    </body>
+
+</html>
+

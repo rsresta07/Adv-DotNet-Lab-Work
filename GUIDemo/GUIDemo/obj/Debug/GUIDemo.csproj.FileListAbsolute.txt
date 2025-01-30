@@ -1,0 +1,21 @@
+C:\Users\dell\source\repos\GUIDemo\GUIDemo\bin\Debug\GUIDemo.exe.config
+C:\Users\dell\source\repos\GUIDemo\GUIDemo\bin\Debug\GUIDemo.exe
+C:\Users\dell\source\repos\GUIDemo\GUIDemo\bin\Debug\GUIDemo.pdb
+C:\Users\dell\source\repos\GUIDemo\GUIDemo\obj\Debug\GUIDemo.csproj.AssemblyReference.cache
+C:\Users\dell\source\repos\GUIDemo\GUIDemo\obj\Debug\GUIDemo.csproj.CoreCompileInputs.cache
+C:\Users\dell\source\repos\GUIDemo\GUIDemo\obj\Debug\GUIDemo.exe
+C:\Users\dell\source\repos\GUIDemo\GUIDemo\obj\Debug\GUIDemo.pdb
+C:\Users\dell\OneDrive\Desktop\Adv.NET_LAB\GUIDemo\GUIDemo\bin\Debug\GUIDemo.exe.config
+C:\Users\dell\OneDrive\Desktop\Adv.NET_LAB\GUIDemo\GUIDemo\bin\Debug\GUIDemo.exe
+C:\Users\dell\OneDrive\Desktop\Adv.NET_LAB\GUIDemo\GUIDemo\bin\Debug\GUIDemo.pdb
+C:\Users\dell\OneDrive\Desktop\Adv.NET_LAB\GUIDemo\GUIDemo\obj\Debug\GUIDemo.csproj.AssemblyReference.cache
+C:\Users\dell\OneDrive\Desktop\Adv.NET_LAB\GUIDemo\GUIDemo\obj\Debug\GUIDemo.csproj.CoreCompileInputs.cache
+C:\Users\dell\OneDrive\Desktop\Adv.NET_LAB\GUIDemo\GUIDemo\obj\Debug\GUIDemo.exe
+C:\Users\dell\OneDrive\Desktop\Adv.NET_LAB\GUIDemo\GUIDemo\obj\Debug\GUIDemo.pdb
+F:\Notes\Adv .net\notes\pdf\Adv.NET_LAB\GUIDemo\GUIDemo\bin\Debug\GUIDemo.exe.config
+F:\Notes\Adv .net\notes\pdf\Adv.NET_LAB\GUIDemo\GUIDemo\bin\Debug\GUIDemo.exe
+F:\Notes\Adv .net\notes\pdf\Adv.NET_LAB\GUIDemo\GUIDemo\bin\Debug\GUIDemo.pdb
+F:\Notes\Adv .net\notes\pdf\Adv.NET_LAB\GUIDemo\GUIDemo\obj\Debug\GUIDemo.csproj.AssemblyReference.cache
+F:\Notes\Adv .net\notes\pdf\Adv.NET_LAB\GUIDemo\GUIDemo\obj\Debug\GUIDemo.csproj.CoreCompileInputs.cache
+F:\Notes\Adv .net\notes\pdf\Adv.NET_LAB\GUIDemo\GUIDemo\obj\Debug\GUIDemo.exe
+F:\Notes\Adv .net\notes\pdf\Adv.NET_LAB\GUIDemo\GUIDemo\obj\Debug\GUIDemo.pdb
