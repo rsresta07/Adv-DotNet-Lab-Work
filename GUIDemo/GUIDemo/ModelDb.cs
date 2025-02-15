@@ -1,89 +1,68 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace GUIDemo
 {
     class ModelDb
     {
-        static string ConnectionString = @"data source=DESKTOP-TMA9H5P\SQLEXPRESS01; database=mydb; integrated security=true";
-        SqlConnection connection = new SqlConnection(ConnectionString);
+        private static readonly string ConnectionString = @"data source=DESKTOP-TMA9H5P\SQLEXPRESS01; database=mydb; integrated security=true";
 
-
-        public bool Insert(string name , int age, string address)
+        public bool Insert(string name, int age, string address)
         {
-            try
-            {
-                connection.Open();
-                string sql = "INSERT INTO registration VALUES('" + name + "','" + age + "','" + address + "')";
-                SqlCommand cmd = new SqlCommand(sql, connection);
-                cmd.ExecuteNonQuery();
-                connection.Close();
-            }
-            catch(SqlException se)
-            {
-                Console.WriteLine(se);
-            }        
-
-            return true;
+            string sql = "INSERT INTO registration (name, age, address) VALUES (@name, @age, @address)";
+            return ExecuteNonQuery(sql, new SqlParameter("@name", name), new SqlParameter("@age", age), new SqlParameter("@address", address));
         }
 
         public string View()
         {
-            string sql = "select* from registration";
-            SqlDataAdapter dataAdapter = new SqlDataAdapter(sql, connection);
-            DataSet dataSet = new DataSet();
-            dataAdapter.Fill(dataSet);
-            string msg = null;
-            
-            foreach (DataRow row in dataSet.Tables[0].Rows)
+            string sql = "SELECT name, age, address FROM registration";
+            using (SqlConnection conn = new SqlConnection(ConnectionString))
+            using (SqlCommand cmd = new SqlCommand(sql, conn))
             {
-                msg += row["name"] + ",  " + row["age"] + ",  " + row["address"] + "\n";
+                conn.Open();
+                using (SqlDataReader reader = cmd.ExecuteReader())
+                {
+                    string msg = "";
+                    while (reader.Read())
+                    {
+                        msg += $"{reader["name"]}, {reader["age"]}, {reader["address"]}\n";
+                    }
+                    return msg;
+                }
             }
-            return msg;
-
         }
 
         public bool Delete(string name)
         {
-            try
-            {
-                connection.Open();
-                string sql = "DELETE FROM registration WHERE name ='"+name+"'";
-                SqlCommand cmd = new SqlCommand(sql, connection);
-                cmd.ExecuteNonQuery();
-                connection.Close();
-            }
-            catch (SqlException se)
-            {
-                Console.WriteLine(se);
-            }
-
-            return true;
+            string sql = "DELETE FROM registration WHERE name = @name";
+            return ExecuteNonQuery(sql, new SqlParameter("@name", name));
         }
 
-        public bool Update(string name,int age)
+        public bool Update(string name, int age)
+        {
+            string sql = "UPDATE registration SET age = @age WHERE name = @name";
+            return ExecuteNonQuery(sql, new SqlParameter("@name", name), new SqlParameter("@age", age));
+        }
+
+        private bool ExecuteNonQuery(string sql, params SqlParameter[] parameters)
         {
             try
             {
-                connection.Open();
-                string sql = "UPDATE registration SET age ='"+age+"' WHERE name ='" + name + "'";
-                SqlCommand cmd = new SqlCommand(sql, connection);
-                cmd.ExecuteNonQuery();
-                connection.Close();
+                using (SqlConnection conn = new SqlConnection(ConnectionString))
+                using (SqlCommand cmd = new SqlCommand(sql, conn))
+                {
+                    cmd.Parameters.AddRange(parameters);
+                    conn.Open();
+                    cmd.ExecuteNonQuery();
+                    return true;
+                }
             }
-            catch (SqlException se)
+            catch (SqlException ex)
             {
-                Console.WriteLine(se);
+                Console.WriteLine(ex.Message);
+                return false;
             }
-
-            return true;
         }
-
-
     }
 }

@@ -1,64 +1,61 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace dialogboxDemo
+namespace DialogBoxDemo
 {
-    class Program :Form
+    class Program : Form
     {
-        Button btn1 = new Button();
-
-        Button btn2 = new Button();
-
-        TextBox txt = new TextBox();
-
-        ColorDialog cd = new ColorDialog();
-        FontDialog fd = new FontDialog();
-
+        private Button btnFont = new Button();
+        private Button btnColor = new Button();
+        private TextBox txt = new TextBox();
+        private ColorDialog colorDialog = new ColorDialog();
+        private FontDialog fontDialog = new FontDialog();
 
         public Program()
         {
-            this.Size = new Size(400,300);
-            this.Location = new Point(300,200);
-            this.Text = "Dialog Example Form";
+            this.Size = new Size(400, 300);
+            this.StartPosition = FormStartPosition.CenterScreen;
+            this.Text = "Dialog Form";
 
             txt.Size = new Size(200, 75);
-            txt.Location = new Point(20,20);
+            txt.Location = new Point(20, 20);
 
-            btn1.Location = new Point(20,100);
-            btn1.Text = "Font";
-            btn1.Click += new EventHandler(btn1_click);
+            btnFont.Location = new Point(20, 100);
+            btnFont.Size = new Size(80, 30);
+            btnFont.Text = "Font";
+            btnFont.Click += BtnFont_Click;
 
-            btn2.Location = new Point(120, 100);
-            btn2.Click += new EventHandler(btn2_click);
-            btn2.Text = "Color";
+            btnColor.Location = new Point(120, 100);
+            btnColor.Size = new Size(80, 30);
+            btnColor.Text = "Color";
+            btnColor.Click += BtnColor_Click;
 
             this.Controls.Add(txt);
-            this.Controls.Add(btn1);
-            this.Controls.Add(btn2);
+            this.Controls.Add(btnFont);
+            this.Controls.Add(btnColor);
         }
 
-        private void btn1_click(Object sender , EventArgs e)
+        private void BtnFont_Click(object sender, EventArgs e)
         {
-            fd.ShowDialog();
-            txt.Font = fd.Font;
-
+            if (fontDialog.ShowDialog() == DialogResult.OK)
+            {
+                txt.Font = fontDialog.Font;
+            }
         }
 
-        private void btn2_click(Object sender, EventArgs e)
+        private void BtnColor_Click(object sender, EventArgs e)
         {
-            cd.ShowDialog();
-            this.BackColor = cd.Color;
-
+            if (colorDialog.ShowDialog() == DialogResult.OK)
+            {
+                this.BackColor = colorDialog.Color;
+            }
         }
 
-
-        static void Main(string[] args)
+        [STAThread]
+        static void Main()
         {
+            Application.EnableVisualStyles();
             Application.Run(new Program());
         }
     }
